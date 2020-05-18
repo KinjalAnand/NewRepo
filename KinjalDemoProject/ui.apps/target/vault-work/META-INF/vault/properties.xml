@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Demo Project Content Package</comment>
+<entry key="createdBy">Kinjal Anand</entry>
+<entry key="name">example-project.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2020-05-18T12:17:27.162+0530</entry>
+<entry key="groupId">com.myco</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">demo</entry>
+<entry key="description">Maven Multimodule project for Demo Project.</entry>
+<entry key="artifactId">example-project.ui.apps</entry>
+<entry key="path">/etc/packages/demo/example-project.ui.apps.zip</entry>
+</properties>

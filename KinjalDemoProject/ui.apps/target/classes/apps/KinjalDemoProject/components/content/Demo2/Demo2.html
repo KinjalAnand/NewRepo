@@ -1,0 +1,9 @@
+<h1>DEMO 2</h1>
+
+<sly data-sly-list.multi="${resource.listChildren}">
+    <sly data-sly-list.child="${multi.listChildren}">
+
+			<h4 class="${childlist.even ? 'active' : ''}">${child.Title}</h4>
+			<h5 class="${childlist.even ? 'active' : ''}">${child.Subtitle}</h5>
+     </sly>
+</sly>

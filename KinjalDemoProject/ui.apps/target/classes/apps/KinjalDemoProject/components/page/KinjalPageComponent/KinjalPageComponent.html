@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <title> Kinjal Page Component</title>
+    <sly data-sly-include="/libs/wcm/core/components/init/init.jsp" data-sly-unwrap/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+</head>
+<body>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.all @ categories='ACL'}"></sly>
+<div><sly data-sly-resource="${'root' @ resourceType='wcm/foundation/components/responsivegrid'}"/></div>
+<!--<div data-sly-use.t= "KinjalDemoProject/components/content/DemoTemplate.html" data-sly-call="${t.first}" class="activeTemplate"></div>-->
+</body>
+</html>

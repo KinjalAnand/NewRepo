@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    $('#compare-button').click(function(e) {
-    var path= $(e.target).data("path");
+    $('#compare-button').click(function() {
     var studentName =[];
     var studentMarks= []
     for (let step = 0; step < $('.SMarks').length; step++) {
@@ -16,7 +15,6 @@ $(document).ready(function () {
          $('#info').html('<p>An error has occurred</p>');
       },
       success: function(data) {
-          $('pre[data-path='+path+']');
          var $students = $('<h3>').text(data);
          $('#infoCompare')
             .html('<h2>Top 3 Students</h2>').append($students);
