@@ -14,7 +14,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class DataModel {
+public class Q4Model {
 
     @SlingObject
     Resource resource;

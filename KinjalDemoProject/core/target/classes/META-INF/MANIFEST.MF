@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1589784443549
+Bnd-LastModified: 1589805699440
 Build-Jdk: 1.8.0_241
 Built-By: Kinjal Anand
 Bundle-Description: Maven Multimodule project for Demo Project.
@@ -10,15 +10,16 @@ Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Export-Package: com.demo.core.models;uses:="javax.annotation,org.apache.
  sling.api.resource,org.apache.sling.models.annotations";version="0.0.1"
- ,com.demo.core.services;version="0.0.1",com.demo.core.servlets;uses:="o
- rg.apache.sling.api,org.apache.sling.api.servlets";version="0.0.1"
-Import-Package: com.demo.core.services,com.google.common.collect;version
- ="[15.0,16)",javax.annotation,javax.inject,javax.servlet;version="[3.0,
- 4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.request
- ;version="[2.4,3)",org.apache.sling.api.resource;version="[2.10,3)",org
- .apache.sling.api.servlets;version="[2.2,3)",org.apache.sling.models.an
- notations;version="[1.5,2)",org.apache.sling.models.annotations.injecto
- rspecific;version="[1.1,2)"
+ ,com.demo.core.services;version="0.0.1",com.demo.core.servlets;uses:="j
+ avax.servlet,org.apache.sling.api,org.apache.sling.api.servlets";versio
+ n="0.0.1"
+Import-Package: com.demo.core.models,com.demo.core.services,com.google.c
+ ommon.collect;version="[15.0,16)",javax.annotation,javax.inject,javax.s
+ ervlet;version="[3.0,4)",org.apache.sling.api;version="[2.3,3)",org.apa
+ che.sling.api.request;version="[2.4,3)",org.apache.sling.api.resource;v
+ ersion="[2.10,3)",org.apache.sling.api.servlets;version="[2.2,3)",org.a
+ pache.sling.models.annotations;version="[1.5,2)",org.apache.sling.model
+ s.annotations.injectorspecific;version="[1.1,2)"
 Provide-Capability: osgi.service;objectClass:List<String>="com.demo.core
  .services.CompareService",osgi.service;objectClass:List<String>="com.de
  mo.core.services.HelperService",osgi.service;objectClass:List<String>="
@@ -36,8 +37,9 @@ Service-Component: OSGI-INF/com.demo.core.services.impl.CompareServiceIm
  pl.xml,OSGI-INF/com.demo.core.services.impl.HelperServiceImpl.xml,OSGI-
  INF/com.demo.core.services.impl.PathServiceImpl.xml,OSGI-INF/com.demo.c
  ore.services.impl.Q6ServiceImpl.xml,OSGI-INF/com.demo.core.servlets.Add
- Servlet.xml,OSGI-INF/com.demo.core.servlets.CompareServlet.xml,OSGI-INF
- /com.demo.core.servlets.DemoServlet.xml,OSGI-INF/com.demo.core.servlets
- .PathDemoServlet.xml
+ Servlet.xml,OSGI-INF/com.demo.core.servlets.CompareResourceServlet.xml,
+ OSGI-INF/com.demo.core.servlets.CompareServlet.xml,OSGI-INF/com.demo.co
+ re.servlets.DemoServlet.xml,OSGI-INF/com.demo.core.servlets.PathDemoSer
+ vlet.xml
 Sling-Model-Packages: com.demo.core
 Tool: Bnd-3.3.0.201609221906

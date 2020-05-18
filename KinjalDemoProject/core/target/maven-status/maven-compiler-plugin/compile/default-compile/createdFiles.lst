@@ -3,6 +3,7 @@ com\demo\core\services\impl\Q6ServiceImpl$clientInfoConfig.class
 com\demo\core\servlets\AddServlet.class
 com\demo\core\services\PathService.class
 com\demo\core\services\impl\CompareServiceImpl.class
+com\demo\core\servlets\CompareResourceServlet.class
 com\demo\core\services\impl\PathServiceImpl.class
 com\demo\core\models\Q3Model.class
 com\demo\core\services\HelperService.class
