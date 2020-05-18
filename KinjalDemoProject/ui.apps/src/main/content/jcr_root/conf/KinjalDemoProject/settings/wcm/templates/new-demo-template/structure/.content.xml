@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-04-25T13:10:36.367+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/KinjalDemoProject/settings/wcm/templates/new-demo-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="KinjalDemoProject/components/page/KinjalPageComponent">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <title
+                jcr:created="{Date}2020-04-25T13:08:03.756+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-25T13:08:03.756+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/title"/>
+            <text
+                jcr:created="{Date}2020-04-25T13:08:56.629+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-25T13:10:03.467+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>I am a Disco Dancer&lt;/p>&#xa;"
+                textIsRich="true"/>
+            <image
+                jcr:created="{Date}2020-04-25T13:09:16.785+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-25T13:10:36.363+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/image"
+                editable="{Boolean}true"/>
+            <responsivegrid
+                jcr:created="{Date}2020-04-25T13:09:24.521+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-25T13:09:24.521+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

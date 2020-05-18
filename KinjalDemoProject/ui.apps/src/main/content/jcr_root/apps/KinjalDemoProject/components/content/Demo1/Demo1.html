@@ -1,0 +1,11 @@
+<h1>Demo1 Component</h1>
+
+    <sly data-sly-test="${properties.data}">
+        <sly data-sly-use.model ="com.demo.core.models.Demo1Model"/>
+        <sly data-sly-list.multi="${model.getName}">
+            <h3>${multi}</h3>
+        </sly>
+    </sly>
+    <sly data-sly-test="${!properties.data}">
+        <div><h3>Nothing to share!</h3></div>
+    </sly>

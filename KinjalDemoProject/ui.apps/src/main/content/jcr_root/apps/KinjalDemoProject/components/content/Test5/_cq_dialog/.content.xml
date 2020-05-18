@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Test Component Q5"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <Basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Clothes Test Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <pages
+                                        granite:class="foundation-layout-util-maximized-alt coral-Form-fieldwrapper"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <container
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <Title
+                                                        granite:class="cmp-teaser__editor-actionField"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="Text"
+                                                        fieldDescription="Enter Title"
+                                                        fieldLabel="Title"
+                                                        name="./title"
+                                                        required="{Boolean}true"/>
+                                                    <Image
+                                                        granite:class="cmp-teaser__editor-actionField"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Add Background Image"
+                                                        fieldLabel="Background Image"
+                                                        name="./image"
+                                                        required="{Boolean}true"/>
+                                                    <listFrom
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Build List Using"
+                                                        name="./listFrom">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <Top_x0020_Wear
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Top Wear"/>
+                                                            <Bottom_x0020_Wear
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Bottom Wear"/>
+                                                            <Accessories
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Accessories"/>
+                                                        </items>
+                                                    </listFrom>
+                                                </items>
+                                            </container>
+                                        </items>
+                                    </pages>
+                                </items>
+                            </well>
+                        </items>
+                    </Basic>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Content-Package-Roots: /apps/KinjalDemoProject,/conf/KinjalDemoProject
+Content-Package-Type: mixed
+Content-Package-Id: my_packages:KinjalDemoProject:0.0.1
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-04-25T13:24:19.934+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/KinjalDemoProject/settings/wcm/templates/KinjalDemoTemplate"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="KinjalDemoProject/components/page/KinjalPageComponent">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <title
+                jcr:created="{Date}2020-04-25T09:53:57.793+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-25T13:24:19.929+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Template Using Blank Demo Page"
+                sling:resourceType="foundation/components/title"/>
+            <responsivegrid
+                jcr:created="{Date}2020-04-25T09:54:28.936+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-25T09:56:09.605+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+        </root>
+    </jcr:content>
+</jcr:root>
