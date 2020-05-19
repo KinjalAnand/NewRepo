@@ -7,5 +7,5 @@
         cq:templateType="/conf/KinjalDemoProject/settings/wcm/template-types/KinjalDemoBlankTemplate"
         jcr:primaryType="cq:PageContent"
         jcr:title="Test Template"
-        status="draft"/>
+        status="enabled"/>
 </jcr:root>

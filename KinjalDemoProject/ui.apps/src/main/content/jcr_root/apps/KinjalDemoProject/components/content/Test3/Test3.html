@@ -1,8 +1,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <h1>Test Component for Student's Subject Marks</h1>
-
-<sly data-sly-test="${resource.listChildren}">
-    <sly data-sly-use.model ="com.demo.core.models.Q3Model"/>
+ <sly data-sly-use.model ="com.demo.core.models.Q3Model"/>
     <sly data-sly-test="${model.data}">
         <sly data-sly-list.child="${model.data}">
             <sly data-sly-test="${child.pass}">
@@ -14,12 +12,13 @@
         </sly>
     </sly>
 
-    <sly data-sly-test="${!model.data}">
-        <div><h3>Nothing to share!</h3></div>
-    </sly>
-
+<sly data-sly-test="${!model.data}">
+    <div><h3>Nothing to share!</h3></div>
 </sly>
+
+<sly data-sly-test="${!wcmmode.edit && !wcmmode.preview}">
 <div id="info"></div>
 <div id="afterCall">
 <button name="Add" id="add-button">Add</button>
 </div>
+</sly>

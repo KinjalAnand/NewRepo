@@ -34,11 +34,7 @@ public class Student implements Comparator<Student> {
 
     @Override
     public int compare(Student arg0, Student arg1) {
-        if(arg0.getMarks()== arg1.getMarks())
-        {
-            return 0;
-        }
-        else if(arg0.getMarks()>arg1.getMarks())
+       if(arg0.getMarks()>arg1.getMarks())
         {
             return -1;
         }

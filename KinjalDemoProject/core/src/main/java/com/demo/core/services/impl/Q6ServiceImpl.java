@@ -1,14 +1,8 @@
 package com.demo.core.services.impl;
 
 
-import javax.jcr.Session;
-
 import com.google.common.collect.Maps;
-import org.apache.jackrabbit.core.TransientRepository;
-
-
 import com.demo.core.services.Q6Service;
-import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.sling.api.resource.*;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
@@ -17,10 +11,6 @@ import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
-
-import javax.jcr.Node;
-import javax.jcr.Repository;
-import javax.jcr.SimpleCredentials;
 import java.util.Map;
 
 @Component(immediate = true, service = Q6Service.class)
@@ -50,14 +40,7 @@ public class Q6ServiceImpl implements Q6Service {
     }
 
     @Activate
-    protected void activate(clientInfoConfig config)
-    {
-        this.clientId= config.clientId();
-        this.clientKey= config.clientKey();
-        this.path= config.path();
-    }
-
-   @Modified
+    @Modified
     protected void modified(clientInfoConfig config)
     {
         this.clientId= config.clientId();

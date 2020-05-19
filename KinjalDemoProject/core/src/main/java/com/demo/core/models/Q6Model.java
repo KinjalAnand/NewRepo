@@ -27,22 +27,32 @@ public class Q6Model {
     public void init()
     {
         path= q6Service.getPath();
-        if(path!= null)
+        Resource res= resource.getResourceResolver().getResource(path);
+        if(res!=null)
         {
-            if(resource.getResourceResolver().getResource(path).getValueMap().get("clientId", String.class)!=null)
-                id= resource.getResourceResolver().getResource(path).getValueMap().get("clientId",String.class);
+            if(res.getValueMap().get("clientId",String.class)!= null)
+            {
+                id= res.getValueMap().get("clientId",String.class);
+            }
             else
-                {if(q6Service.getCId() == null)
-                    id= "No Id";
-                else
-                    id= q6Service.getCId();}
-            if(resource.getResourceResolver().getResource(path).getValueMap().get("clientKey", String.class)!=null)
-                key= resource.getResourceResolver().getResource(path).getValueMap().get("clientKey",String.class);
+            {if(q6Service.getCId() == null)
+                id= "No Id";
             else
-                {if(q6Service.getCKey()== null)
-                    key= "No Key";
-                 else
-                    key= q6Service.getCKey();}
+                id= q6Service.getCId();}
+
+            if(res.getValueMap().get("clientKey",String.class)!= null)
+            {
+                key= res.getValueMap().get("clientKey",String.class);
+            }
+            else
+            {if(q6Service.getCId() == null)
+                id= "No Id";
+            else
+            {if(q6Service.getCKey()== null)
+                key= "No Key";
+            else
+                key= q6Service.getCKey();}
+            }
         }
         else
         {

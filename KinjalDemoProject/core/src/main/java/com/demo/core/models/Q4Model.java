@@ -26,19 +26,24 @@ public class Q4Model {
 
     @PostConstruct
     public void init() {
-        Iterator<Resource> iterator = resource.getChild("multi").listChildren();
-        while (iterator.hasNext()) {
-            Student student = new Student();
-            Resource res = iterator.next();
-            name = res.getValueMap().get("SName", String.class);
-            student.setName(name);
-            marks = res.getValueMap().get("Marks", String.class);
-            student.setMarks(Integer.parseInt(marks));
-            if (name == null)
-                student.setName("Others");
-            if (marks == null)
-                student.setMarks(0);
-            studentSortedSet.add(student);
+        if(resource.getChild("multi")!= null)
+        {
+            Iterator<Resource> iterator = resource.getChild("multi").listChildren();
+            while (iterator.hasNext()) {
+                Student student = new Student();
+                Resource res = iterator.next();
+                name = res.getValueMap().get("SName", String.class);
+                student.setName(name);
+                marks = res.getValueMap().get("Marks", String.class);
+                if (marks != null) {
+                    student.setMarks(Integer.parseInt(marks));
+                }
+//                if (name == null)
+//                    student.setName("Others");
+                if (marks == null)
+                    student.setMarks(0);
+                studentSortedSet.add(student);
+            }
         }
     }
 

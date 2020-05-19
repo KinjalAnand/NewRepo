@@ -1,18 +1,18 @@
 <h1>Test Component for Student Details</h1>
 
-<sly data-sly-test="${resource.listChildren}">
-    <sly data-sly-use.model ="com.demo.core.models.Q4Model"/>
-    <sly data-sly-test="${model.data}">
-        <sly data-sly-list.child="${model.data}">
-            <h3><div class="SMarks" value="${child.marks}" data-marks="${child.marks}">${child.name}</div></h3>
-        </sly>
-    </sly>
-
-    <sly data-sly-test="${!model.getData}">
-        <div><h3>Nothing to share!</h3></div>
+<sly data-sly-use.model ="com.demo.core.models.Q4Model"/>
+<sly data-sly-test="${model.data}">
+    <sly data-sly-list.child="${model.data}">
+        <h3><div class="SMarks">${child.name}</div></h3>
     </sly>
 </sly>
+
+<sly data-sly-test="${!model.getData}">
+    <div><h3>Nothing to share!</h3></div>
+</sly>
+<sly data-sly-test="${!wcmmode.edit && !wcmmode.preview}">
 <pre class="infoCompare" data-path="${resource.path}"></pre>
 <div class="afterCompare">
     <button name="Compare" class="compare-button" data-path="${resource.path}">Compare</button>
 </div>
+</sly>

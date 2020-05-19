@@ -13,7 +13,7 @@ com\demo\core\services\impl\Q6ServiceImpl.class
 com\demo\core\servlets\CompareServlet.class
 com\demo\core\servlets\DemoServlet.class
 com\demo\core\models\Student.class
-com\demo\core\models\DataModel.class
+com\demo\core\models\Q4Model.class
 com\demo\core\models\Q2Model.class
 com\demo\core\services\Q6Service.class
 com\demo\core\services\CompareService.class

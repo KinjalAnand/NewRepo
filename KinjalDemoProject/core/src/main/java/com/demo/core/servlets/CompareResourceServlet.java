@@ -24,7 +24,6 @@ property = {
 })
 public class CompareResourceServlet extends SlingAllMethodsServlet {
 
-    private SortedSet<Student> studentSortedSet;
     PrintWriter output;
 
     @Override
@@ -34,15 +33,21 @@ public class CompareResourceServlet extends SlingAllMethodsServlet {
         //output.println("Testing 1...2...3");
         if(q4Model != null)
         {
-            studentSortedSet= q4Model.getData();
+            SortedSet<Student> studentSortedSet = q4Model.getData();
             int i=0;
+            int n= studentSortedSet.size();
+            if(n==1)
+                output.print("Top 1 Student\n");
+            else if(n<3)
+                output.print("Top "+n+" Students\n");
+            else
+                output.print("Top 3 Students\n");
             Iterator value = studentSortedSet.iterator();
             while (value.hasNext()) {
                 Student s = (Student) value.next();
                 if(i<3)
                 {
-                    output.print("Name = " + s.getName() +
-                            ", Marks = " + s.getMarks() );
+                    output.print("Name = " + s.getName() + ", Marks = " + s.getMarks() );
                     switch(i)
                     {
                         case 0: output.print(", Position = First\n");
